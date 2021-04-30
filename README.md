@@ -8,7 +8,7 @@ INSTALLATION
 2.	Visual Studio code
 3.	Postman
 4.	Mongodb
-5.		
+		
 STEPS TO RUN PROJECT
 1.	npm init
 2.	npm install             
@@ -17,6 +17,7 @@ STEPS TO RUN PROJECT
 	nodemon app
         
 Run requests using postman
+
 1.	Registration of User
 	
 POST http://localhost:7000/signup
@@ -27,13 +28,17 @@ Body: {
 }
 
 2.	Login
-POST localhost:7000/login
+	
+POST https://localhost:7000/login
+
  Body: {
 “email” : “jimin@gmail.com”,
 “password” : “1234567”
 }
+
 JWT token generated
 
 3.	Logout
-GET localhost:7000/logout
+
+GET http://localhost:7000/logout
 
